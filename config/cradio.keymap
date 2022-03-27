@@ -37,16 +37,16 @@
             bindings = <&kp TAB>;
         };
 
-        combo_left_brace {
-            timeout-ms = <60>;
-            key-positions = <1 11>;
-            bindings = <&kp LEFT_BRACE>;
-        };
-
         combo_left_bracket {
             timeout-ms = <60>;
-            key-positions = <2 12>;
+            key-positions = <1 11>;
             bindings = <&kp LEFT_BRACKET>;
+        };
+
+        combo_left_brace {
+            timeout-ms = <60>;
+            key-positions = <2 12>;
+            bindings = <&kp LEFT_BRACE>;
         };
 
         combo_left_paren {
@@ -61,16 +61,16 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
         };
 
-        combo_right_bracket {
-            timeout-ms = <60>;
-            key-positions = <7 17>;
-            bindings = <&kp RIGHT_BRACKET>;
-        };
-
         combo_right_brace {
             timeout-ms = <60>;
-            key-positions = <8 18>;
+            key-positions = <7 17>;
             bindings = <&kp RIGHT_BRACE>;
+        };
+
+        combo_right_bracket {
+            timeout-ms = <60>;
+            key-positions = <8 18>;
+            bindings = <&kp RIGHT_BRACKET>;
         };
     };
 
