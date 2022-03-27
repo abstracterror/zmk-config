@@ -74,6 +74,16 @@
         };
     };
 
+    behaviors {
+        shift_cw: shift_caps_word {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_SHIFT_CAPS_WORD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSFT>, <&caps_word>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -82,7 +92,7 @@
                 &kp Q       &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp BKSP
                 &mt LCTL A  &mt LALT R  &mt LGUI S  &mt LSFT T  &kp G                   &kp M       &mt RSFT N  &mt RGUI E  &mt RALT I  &mt RCTL O
                 &lt BLT Z   &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp CMMA    &kp DOT     &kp FSLH
-                                                    &mo NUM     &kp LSFT                &lt NAV SPC &mo SYM
+                                                    &mo NUM     &shift_cw               &lt NAV SPC &mo SYM
             >;
         };
 
