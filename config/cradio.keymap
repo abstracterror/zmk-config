@@ -22,6 +22,10 @@
     tapping_term_ms = <200>;
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE BACKSPACE>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
