@@ -129,7 +129,7 @@
                 &kp Q       &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp BKSP
                 &mt LCTL A  &mt LSFT R  &mt LGUI S  &mt LALT T  &kp G                   &kp M       &mt RALT N  &mt RGUI E  &mt RSFT I  &mt RCTL O
                 &lt BLT Z   &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp CMMA    &kp DOT     &mt MEH FSLH
-                                                    &mo NUM     &shift_cw               &lt NAV SPC &lt SYM TAB
+                                                    &lt NUM TAB &shift_cw               &lt NAV SPC &mo SYM
             >;
         };
 
