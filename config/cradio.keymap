@@ -28,14 +28,14 @@
 
 / {
     macros {
-        shifted: shifted {
-            label = "shifted";
+        lpar: lpar {
+            label = "lpar";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
+            #binding-cells = <0>;
             wait-ms = <16>;
             bindings
                 = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp>
+                , <&macro_tap &kp N9>
                 , <&macro_release &kp LSHFT>
                 ;
         };
@@ -70,7 +70,7 @@
         combo_left_paren {
             timeout-ms = <60>;
             key-positions = <3 13>;
-            bindings = <&shifted N9>;
+            bindings = <&lpar>;
         };
 
         combo_right_paren {
