@@ -74,12 +74,6 @@
             bindings = <&kp ESC>;
         };
 
-        combo_tab {
-            timeout-ms = <60>;
-            key-positions = <13 23>;
-            bindings = <&kp TAB>;
-        };
-
         combo_left_bracket {
             timeout-ms = <60>;
             key-positions = <1 11>;
@@ -135,7 +129,7 @@
                 &kp Q       &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp BKSP
                 &mt LCTL A  &mt LSFT R  &mt LGUI S  &mt LALT T  &kp G                   &kp M       &mt RALT N  &mt RGUI E  &mt RSFT I  &mt RCTL O
                 &lt BLT Z   &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp CMMA    &kp DOT     &mt MEH FSLH
-                                                    &mo NUM     &shift_cw               &lt NAV SPC &mo SYM
+                                                    &mo NUM     &shift_cw               &lt NAV SPC &lt SYM TAB
             >;
         };
 
@@ -171,7 +165,7 @@
                 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                  &kp F6      &kp F7      &kp F8      &kp F9      &kp DEL
                 &kp LCTL    &kp LSFT    &kp LGUI    &kp LALT    &kp ESC                 &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp ENTER
                 &kp F10     &kp F11     &kp F12     &none       &none                   &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp INS
-                                                    &trans      &kp TAB                 &trans      &trans
+                                                    &trans      &trans                  &trans      &trans
             >;
         };
 
