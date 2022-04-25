@@ -31,7 +31,7 @@
             , <&macro_tap &kp kc> \
             , <&macro_release &kp LSHFT> \
         ; \
-    }
+    )
 
 &mt {
     flavor = "tap-preferred";
@@ -45,24 +45,24 @@
 / {
     macros {
         // shifted characters based on UK ISO layout
-        SHIFTED(excl,       N1);
-        SHIFTED(dquo,       N2);
-        SHIFTED(pound,      N3);
-        SHIFTED(dollar,     N4);
-        SHIFTED(percent,    N5);
-        SHIFTED(caret,      N6);
-        SHIFTED(ampersand,  N7);
-        SHIFTED(asterisk,   N8);
-        SHIFTED(lpar,       N9);
-        SHIFTED(rpar,       N0);
-        SHIFTED(underscore, MINUS);
-        SHIFTED(plus,       EQUAL);
-        SHIFTED(lbrc,       LEFT_BRACKET);
-        SHIFTED(rbrc,       RIGHT_BRACKET);
-        SHIFTED(colon,      SEMICOLON);
-        SHIFTED(at,         SINGLE_QUOTE);
-        SHIFTED(tilde,      NON_US_HASH);
-        SHIFTED(pipe,       NON_US_BACKSLASH);
+        SHIFTED(excl,       N1)
+        SHIFTED(dquo,       N2)
+        SHIFTED(pound,      N3)
+        SHIFTED(dollar,     N4)
+        SHIFTED(percent,    N5)
+        SHIFTED(caret,      N6)
+        SHIFTED(ampersand,  N7)
+        SHIFTED(asterisk,   N8)
+        SHIFTED(lpar,       N9)
+        SHIFTED(rpar,       N0)
+        SHIFTED(underscore, MINUS)
+        SHIFTED(plus,       EQUAL)
+        SHIFTED(lbrc,       LEFT_BRACKET)
+        SHIFTED(rbrc,       RIGHT_BRACKET)
+        SHIFTED(colon,      SEMICOLON)
+        SHIFTED(at,         SINGLE_QUOTE)
+        SHIFTED(tilde,      NON_US_HASH)
+        SHIFTED(pipe,       NON_US_BACKSLASH)
     };
 
     combos {
