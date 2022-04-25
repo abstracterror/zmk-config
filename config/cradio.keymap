@@ -24,10 +24,7 @@
 // A macro for shifted characters, instead of using ZMK's shifted character
 // codes, as a workaround for https://github.com/zmkfirmware/zmk/issues/759.
 #define SHIFTED(name, kc) \
-    name: name { \
-        label = "name"; \
-        compatible = "zmk,behavior-macro"; \
-        #binding-cells = <0>; \
+    ZMK_MACRO(name, \
         wait-ms = <16>; \
         bindings \
             = <&macro_press &kp LSHFT> \
@@ -66,9 +63,6 @@
         SHIFTED(at,         SINGLE_QUOTE);
         SHIFTED(tilde,      NON_US_HASH);
         SHIFTED(pipe,       NON_US_BACKSLASH);
-        SHIFTED(lessthan,    COMMA);
-        SHIFTED(greaterthan, DOT);
-        SHIFTED(question,    SLASH);
     };
 
     combos {
