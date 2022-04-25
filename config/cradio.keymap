@@ -20,6 +20,7 @@
 // keys
 #define NUBS NON_US_BACKSLASH
 #define NUHS NON_US_HASH
+#define MEH  LC(LS(LALT))
 
 // A macro for shifted characters, instead of using ZMK's shifted character
 // codes, as a workaround for https://github.com/zmkfirmware/zmk/issues/759.
@@ -133,7 +134,7 @@
             bindings = <
                 &kp Q       &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp BKSP
                 &mt LCTL A  &mt LSFT R  &mt LGUI S  &mt LALT T  &kp G                   &kp M       &mt RALT N  &mt RGUI E  &mt RSFT I  &mt RCTL O
-                &lt BLT Z   &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp CMMA    &kp DOT     &kp FSLH
+                &lt BLT Z   &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp CMMA    &kp DOT     &mt MEH FSLH
                                                     &mo NUM     &shift_cw               &lt NAV SPC &mo SYM
             >;
         };
