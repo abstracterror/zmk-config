@@ -20,7 +20,7 @@
 // keys
 #define NUBS   NON_US_BACKSLASH
 #define NUHS   NON_US_HASH
-#define MH(kc) LC(LS(LA(kc)))
+#define MH(kc) LC(LS(LG(kc)))
 
 // A macro for shifted characters, instead of using ZMK's shifted character
 // codes, as a workaround for https://github.com/zmkfirmware/zmk/issues/759.
