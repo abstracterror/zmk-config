@@ -27,6 +27,20 @@
 };
 
 / {
+    macros {
+        shifted: shifted {
+            label = "shifted";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>;
+            wait-ms = <16>
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -56,7 +70,7 @@
         combo_left_paren {
             timeout-ms = <60>;
             key-positions = <3 13>;
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&shifted N9>;
         };
 
         combo_right_paren {
