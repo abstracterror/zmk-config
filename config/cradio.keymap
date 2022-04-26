@@ -83,7 +83,7 @@
         combo_left_brace {
             timeout-ms = <60>;
             key-positions = <2 12>;
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&lbrc>;
         };
 
         combo_left_paren {
@@ -95,13 +95,13 @@
         combo_right_paren {
             timeout-ms = <60>;
             key-positions = <6 16>;
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&rpar>;
         };
 
         combo_right_brace {
             timeout-ms = <60>;
             key-positions = <7 17>;
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&rbrc>;
         };
 
         combo_right_bracket {
