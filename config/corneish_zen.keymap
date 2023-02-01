@@ -74,6 +74,62 @@
             bindings = <&kp ESC>;
         };
 
+        combo_q {
+            timeout-ms = <60>;
+            key-positions = <1 2>;
+            bindings = <&kp Q>;
+            layers = <DEF>;
+        };
+
+        combo_colon {
+            timeout-ms = <60>;
+            key-positions = <1 2>;
+            bindings = <&colon>;
+            layers = <SYM>;
+        };
+
+        combo_excl {
+            timeout-ms = <60>;
+            key-positions = <1 2>;
+            bindings = <&excl>;
+            layers = <TOP>;
+        };
+
+        combo_f1 {
+            timeout-ms = <60>;
+            key-positions = <1 2>;
+            bindings = <&kp F1>;
+            layers = <NAV>;
+        };
+
+        combo_bksp {
+            timeout-ms = <60>;
+            key-positions = <7 8>;
+            bindings = <&kp BKSP>;
+            layers = <DEF>;
+        };
+
+        combo_scln {
+            timeout-ms = <60>;
+            key-positions = <7 8>;
+            bindings = <&kp SCLN>;
+            layers = <NUM>;
+        };
+
+        combo_tilde {
+            timeout-ms = <60>;
+            key-positions = <7 8>;
+            bindings = <&tilde>;
+            layers = <TOP>;
+        };
+
+        combo_del {
+            timeout-ms = <60>;
+            key-positions = <7 8>;
+            bindings = <&kp DEL>;
+            layers = <NAV>;
+        };
+
         combo_left_bracket {
             timeout-ms = <60>;
             key-positions = <1 11>;
