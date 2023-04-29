@@ -20,7 +20,10 @@
 // keys
 #define NUBS   NON_US_BACKSLASH
 #define NUHS   NON_US_HASH
-#define MH(kc) LC(LS(LG(kc)))
+
+// MEH should be LC(LS(LALT)), but I have LALT and LGUI swapped in macOS system
+// settings so that I can use the same keymap with Windows machines.
+#define MEH    LC(LS(LGUI))
 
 // A macro for shifted characters, instead of using ZMK's shifted character
 // codes, as a workaround for https://github.com/zmkfirmware/zmk/issues/759.
@@ -134,14 +137,14 @@
                 &kp Q       &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp BKSP
                 &mt LCTL A  &mt LSFT R  &mt LGUI S  &mt LALT T  &kp G                   &kp M       &mt LALT N  &mt RGUI E  &mt RSFT I  &mt RCTL O
                 &lt BLT Z   &kp X       &kp C       &kp D       &kp V                   &kp K       &kp H       &kp CMMA    &kp DOT     &kp FSLH
-                                        &kp ESC     &lt NUM TAB &kp LSHFT               &lt NAV SPC &mo SYM     &kp ENTER
+                                        &mt MEH ESC &lt NUM TAB &kp LSHFT               &lt NAV SPC &mo SYM     &kp ENTER
             >;
         };
 
         number_layer {
             label = "NUMBER";
             bindings = <
-                &kp MH(Q)   &kp MH(W)   &kp MH(F)   &kp MH(P)   &kp MH(B)               &none       &kp NUM_4   &kp NUM_5   &kp NUM_6   &kp SCLN
+                &none       &none       &none       &none       &none                   &none       &kp NUM_4   &kp NUM_5   &kp NUM_6   &kp SCLN
                 &kp LCTL    &kp LSFT    &kp LGUI    &kp LALT    &none                   &none       &kp NUM_1   &kp NUM_2   &kp NUM_3   &kp NUBS
                 &none       &none       &none       &none       &none                   &none       &kp NUM_7   &kp NUM_8   &kp NUM_9   &pipe
                                         &trans      &mo NUM     &trans                  &lt NAV NUM_0  &mo TOP  &trans
@@ -151,7 +154,7 @@
         symbols_layer {
             label = "SYMBOL";
             bindings = <
-                &colon      &plus       &underscore &dquo       &none                   &kp MH(J)   &kp MH(L)   &kp MH(U)   &kp MH(Y)   &none
+                &colon      &plus       &underscore &dquo       &none                   &none       &none       &none       &none       &none
                 &none       &kp EQUAL   &kp MINUS   &kp SQT     &none                   &none       &kp RALT    &kp RGUI    &kp RSFT    &kp RCTL
                 &none       &none       &none       &none       &none                   &none       &none       &none       &none       &none
                                         &trans      &mo TOP     &trans                  &trans      &mo SYM     &trans
