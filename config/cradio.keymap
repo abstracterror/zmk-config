@@ -126,7 +126,7 @@
 
         default_layer {
             bindings = <
-                &kp Q       &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp BKSP
+                &kp Q       &kp W       &kp F       &kp P       &kp B                   &kp J       &kp L       &kp U       &kp Y       &kp GLOBE
                 &mt LCTL A  &mt LSFT R  &mt LGUI S  &mt LALT T  &kp G                   &kp M       &mt LALT N  &mt RGUI E  &mt RSFT I  &mt RCTL O
                 &lt BLT Z   &mt GLOBE X &kp C       &kp D       &kp V                   &kp K       &kp H       &kp CMMA    &kp DOT     &kp FSLH
                                                     &lt NUM TAB &shift_cw               &lt NAV SPC &mo SYM
@@ -162,7 +162,7 @@
 
         nav_layer {
             bindings = <
-                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                  &kp F6      &kp F7      &kp F8      &kp F9      &kp DEL
+                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                  &kp F6      &kp F7      &kp F8      &kp BKSP    &kp DEL
                 &kp LCTL    &kp LSFT    &kp LGUI    &kp LALT    &kp ESC                 &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp ENTER
                 &kp F10     &kp F11     &kp F12     &none       &none                   &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp INS
                                                     &trans      &trans                  &trans      &trans
